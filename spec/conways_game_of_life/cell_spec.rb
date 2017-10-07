@@ -30,8 +30,7 @@ RSpec.describe Cell do
     expect(cell.dead?).to eq(false)
   end
 
-  it "sets right value to the cell " do
-
+  it 'sets right value to the cell ' do
     cell.setvalue(true)
     expect(cell.alive?).to eq(true)
     cell.setvalue(false)
