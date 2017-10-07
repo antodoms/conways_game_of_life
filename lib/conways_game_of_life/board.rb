@@ -23,11 +23,11 @@ class Board
   end
 
   def set_cell(x,y,value)
-    @cells_dictionary[x][y].setvalue(value)
+    cells_dictionary[x][y].setvalue(value)
   end
 
   def get_cell(x,y)
-    @cells_dictionary[x][y]
+    cells_dictionary[x][y]
   end
 
   def get_neighbors(cell)
