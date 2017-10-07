@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'conways_game_of_life'
+require 'pry'
+
+
+puts 'GAME 1 starts now...'
+@cols = 80
+@rows = 20
+@board = Board.new(@rows, @cols) # Note: col is 1st
+@game = Game.new(@board)
+
+@game.random_generator
+
+#binding.pry
+
+until @game.can_play
+  @game.print_board_console
+  @game.tick!
+  sleep 0.5
+end
+
+puts 'GAME 1 ENDED...'
