@@ -3,7 +3,6 @@
 class Board
   attr_accessor :rows, :cols, :cells, :cells_dictionary
 
-
   def initialize(rows = 3, cols = 3, custom_cells = [])
     @rows = rows
     @cols = cols
