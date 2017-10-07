@@ -5,6 +5,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 TODO: Delete this and the text above, and describe your gem
 
 ## Usage
+
 Examples to start this script are shown in the `bin/start_manual` and `bin/start_random` scripts in the project. To test the manual entry of the cell data run the below command on your terminal:
 ```shell
 bin/start_manual
@@ -13,6 +14,14 @@ To test the randomly generated cell data run the below command on your terminal:
 ```shell
 bin/start_random
 ```
+
+## Possible Improvements
+
+- Get out of the infinite loop when nothing is changing between consecutive frames.
+- Use a ruby graphical interface such as by using gofu gem which is a wrapper to build 2D games in ruby.
+- Use the script in a ruby on rails application to return the next tick for a board via an endpoint.
+- could improve the design of the classes.
+
 
 ## Installation
 
