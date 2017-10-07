@@ -10,19 +10,25 @@ class Board
     @cols = cols
     @cells = []
 
-    0..rows do |x|
-      0..cols do |y|
+    for x in 0..rows do
+      for y in 0..rows do
         @cells << Cell.new(x, y)
       end
     end
   end
 
   def live_cells
-    cells.select { |cell| cell.alive }
+    cells.select { |cell| cell.alive? }
   end
 
   def dead_cells
-    cells.select { |cell| cell.dead }
+    cells.select { |cell| cell.dead? }
+  end
+
+  def random_generator
+    cells.each do |cell|
+      cell.value = [true, false].sample
+    end
   end
 
 end
