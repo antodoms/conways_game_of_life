@@ -12,7 +12,15 @@ class Cell
   def initialize(x=0, y=0)
     @x = x
     @y = y
-    @value = true
+    @value = false
+  end
+
+  def alive?
+    value
+  end
+
+  def dead?
+    !value
   end
 
   def die!
