@@ -13,6 +13,10 @@ class Cell
     @value = false
   end
 
+  def setvalue(value)
+    @value = value ? true : false
+  end
+
   def alive?
     value
   end
